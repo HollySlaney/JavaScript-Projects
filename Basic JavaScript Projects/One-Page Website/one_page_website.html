@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Crosby Cheese | Homepage</title>
+		<link rel="stylesheet" href="CSS/One_Page_Website.css">
+		<script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+	<!--HEADING-->
+		<h1 id="Top Section">
+		<h1>Crosby Cheese</p></h1>
+	<!--END HEADING-->
+
+	<!--CONTACT-->
+		<h2><p>Leave us your contact information and we will send you an invite to our monthly subscription!</p></h2>
+		
+		<form action="" method="post">
+			<input class="rsvp" type="text" value="First Name"><br>
+			<input class="rsvp" type="text" value="Last Name"><br>
+			<input class="rsvp" type="text" value="Email Address"><br>
+			<input class="rsvp" type="text" value="Phone Number"><br>
+			<div class="form-spacer">
+			</div>
+			<input type="submit" value="Submit">
+		</form>
+	<!--END CONTACT-->
+
+	<!--IMAGES-->
+	<h5 id="Gallery Section">
+	<img src="https://images.immediate.co.uk/production/volatile/sites/30/2023/02/Types-of-cheese-8065b72.jpg?resize=768,574">
+	<img src="https://t4.ftcdn.net/jpg/00/71/66/69/360_F_71666993_tv6fg6VaVkbffuRA7KphW2S1eC9cm0XV.jpg"><br>
+	<img src="https://www.shutterstock.com/image-photo/smoked-cheese-closeup-over-white-600nw-163755578.jpg">
+	<img src="https://www.shutterstock.com/image-photo/dutch-smoked-cheese-pieces-isolated-600nw-81481246.jpg"></h5>
+	<h3 id="How to Video">Not sure how to cut the cheese? Check out this video!</h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/fTgm36y884c?si=w-5XwninKf2dvXkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<!--END IMAGES-->
+
+	<!--FOOTER-->
+	<footer>
+		<h2 id="Contact Us"><b>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</b></h2>
+		<h4><i>769 Janny Street&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CrosbyCheese@outlook.com</i><h4>
+        <h4><i>Edmonton, Alberta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;580-682-7280</i></h4>
+        <h4><i>T5B Y9O</i></h4>
+    </footer>
+	<!--END FOOTER-->
+
+		<!--IMAGES USED TO OPEN LIGHTBOX-->
+		<div class="row">
+			<div class="column">
+				<img src="images/cheese1.jpg" style="width:25%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="images/cheese2.jpg" style="width:25%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="images/cheese3.jpg" style="width:25%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="images/cheese4.jpg" style="width:25%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+		</div>
+		
+		<!--THE MODAL/LIGHTBOX-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="images/cheese1_wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="images/cheese2_wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="images/cheese3_wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="images/cheese4_wide.jpg" style="width:100%">
+				</div>
+	
+		<!--NEXT/PREVIOUS CONTROLS-->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<!--CAPTION TEXT-->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+		
+		<!--THUMBNAIL IMAGE CONTROLS-->
+		<div class="column">
+			<img class="demo cursor" src="images/cheese1_wide.jpg" style="width:25%" onclick="currentSlide(1)" alt="Cheese">
+		</div>
+		
+		<div class="column">
+			<img class="demo cursor" src="images/cheese2_wide.jpg" style="width:25%" onclick="currentSlide(2)" alt="Cheese">
+		</div>
+		
+		<div class="column">
+			<img class="demo cursor" src="images/cheese3_wide.jpg" style="width:25%" onclick="currentSlide(3)" alt="Cheese">
+		</div>
+		
+		<div class="column">
+			<img class="demo cursor" src="images/cheese4_wide.jpg" style="width:25%" onclick="currentSlide(4)" alt="Cheese">
+		</div>
+	</div>
+	</div>
+
+	<!--NAVIGATION-->
+		<nav>
+		<a href="#Top Section">Back to Top</a>|
+		<a href="#Gallery Section">Gallery</a>|
+		<a href="#How to Video">How to Video</a>|
+		<a href="#Contact Us">Contact Us</a>
+		</nav>
+	<!--END NAVIGATION-->
+	</body>
+</html>
